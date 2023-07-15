@@ -7,15 +7,15 @@ function NavigationInLargeScale(props) {
 
   useEffect(() => {
     const handlerScroll = () => {
-      setSticky(window.scrollY > 500);
       if (window.scrollY > 500) {
+        setSticky(true);
         props.onSticky(true);
       }
       if (window.scrollY <= 500) {
+        setSticky(false);
         props.onSticky(false);
       }
     };
-    console.log(window.scrollY);
 
     window.addEventListener("scroll", handlerScroll);
 

@@ -53,16 +53,24 @@ nav.sticky .logo {
   margin-right: 24px;
 }
 
-nav.sticky .navItems ul {
-  color: black;
+nav.sticky .navItems ul:hover {
+  color: white;
 }
 
 .navItems ul li {
   cursor: pointer;
-  padding: 2px 4px;
+}
+
+nav.sticky .navItems ul li {
+  color: white;
+}
+
+nav.sticky .navItems ul li:hover {
+  color: white;
 }
 
 .navItems ul li a {
+  padding: 2px 4px;
   color: white;
   text-decoration: none;
 }

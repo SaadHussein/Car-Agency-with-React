@@ -1,6 +1,6 @@
 import seats from "../../../assets/seats.png";
 import luggage from "../../../assets/luggage.png";
-import classes from "./carItem.module.css";
+import classes from "./CarItem.module.css";
 
 function CarItem(props) {
   return (

@@ -5,7 +5,7 @@
 
 .carOne {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
 }
 .carTwo {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car-1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@
 }
 .carThree {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car-2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +29,7 @@
 }
 .carFour {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car-3.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +37,7 @@
 }
 .carFive {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/inMiddle.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +74,7 @@
 
 .carSix {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car-4.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +82,7 @@
 }
 .carSeven {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car-7.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,7 +90,7 @@
 }
 .carEight {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car-6.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +98,7 @@
 }
 .carNine {
   width: 100%;
-  height: 320px;
+  height: 270px;
   background-image: url("../../../assets/Car-5.png");
   background-repeat: no-repeat;
   background-size: cover;

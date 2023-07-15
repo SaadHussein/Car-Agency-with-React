@@ -1,0 +1,28 @@
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #12273d;
+  padding: 45px 0;
+  position: relative;
+}
+
+.bigHeader {
+  font-size: 96px;
+  color: white;
+  margin-top: 20px;
+  opacity: 0.25;
+}
+
+.miniHeader {
+  color: white;
+  font-size: 52px;
+  margin-top: -45px;
+  margin-bottom: 52px;
+}
+
+.testimonialsList {
+  width: 55%;
+  margin-bottom: 50px;
+}

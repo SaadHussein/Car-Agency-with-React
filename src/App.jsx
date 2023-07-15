@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import Cars from "./components/Cars/Cars";
 import Gallery from "./components/Gallery/Gallery";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Logos from "./components/Logos/Logos";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Cars />
       <Gallery />
       <Testimonials />
+      <Logos />
     </>
   );
 }

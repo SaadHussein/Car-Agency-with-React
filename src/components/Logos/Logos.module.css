@@ -1,0 +1,8 @@
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 115px 0;
+  background-color: rgb(246, 243, 243);
+}

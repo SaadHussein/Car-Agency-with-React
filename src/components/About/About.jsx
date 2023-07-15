@@ -4,7 +4,7 @@ import carOnWall from "../../../assets/caronwall.png";
 
 function About() {
   return (
-    <div className={classes.about}>
+    <div className={classes.about} id="about">
       <div className={classes.text}>
         <h1>ABOUT US</h1>
         <h2>About</h2>

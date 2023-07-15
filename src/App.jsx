@@ -6,6 +6,7 @@ import Cars from "./components/Cars/Cars";
 import Gallery from "./components/Gallery/Gallery";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Logos from "./components/Logos/Logos";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Gallery />
       <Testimonials />
       <Logos />
+      <Footer />
     </>
   );
 }

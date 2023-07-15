@@ -29,11 +29,21 @@ function NavigationInLargeScale(props) {
       </div>
       <div className={classes.navItems}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Cars</li>
-          <li>Contact us</li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#cars">Cars</a>
+          </li>
+          <li>
+            <a href="#footer">Contact us</a>
+          </li>
         </ul>
         <MdShoppingCart
           size={28}

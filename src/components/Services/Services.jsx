@@ -27,7 +27,7 @@ const servicesItems = [
 
 function Services() {
   return (
-    <div className={classes.services}>
+    <div className={classes.services} id="services">
       <h1>SERVICES</h1>
       <p className={classes.miniTitle}>Services</p>
       <div className={classes.servicesList}>

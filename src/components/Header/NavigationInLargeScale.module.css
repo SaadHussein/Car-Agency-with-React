@@ -20,6 +20,7 @@ nav {
 
 nav.sticky {
   width: 100%;
+  box-shadow: 1px 0 16px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -59,6 +60,19 @@ nav.sticky .navItems ul {
 .navItems ul li {
   cursor: pointer;
   padding: 2px 4px;
+}
+
+.navItems ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.sticky .navItems ul li a {
+  color: black;
+}
+
+nav.sticky .navItems ul li a:hover {
+  color: white;
 }
 
 .navItems ul li:hover {

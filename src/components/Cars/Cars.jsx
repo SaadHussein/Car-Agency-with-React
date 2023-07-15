@@ -52,7 +52,7 @@ function Cars() {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className={classes.cars}>
+    <div className={classes.cars} id="cars">
       <h1>CARS</h1>
       <p className={classes.miniTitle}>Cars</p>
       <div className={classes.listOfCars}>

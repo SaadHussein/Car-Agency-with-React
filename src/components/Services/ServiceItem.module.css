@@ -1,0 +1,23 @@
+.serviceItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+}
+
+.serviceItem img {
+  width: 92px;
+}
+
+.serviceItem h2 {
+  font-size: 32px;
+  margin-top: 44px;
+  margin-bottom: 18px;
+}
+
+.serviceItem p {
+  font-size: 24px;
+  color: #12273d;
+  text-align: center;
+}

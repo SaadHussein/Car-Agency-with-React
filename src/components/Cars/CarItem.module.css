@@ -1,0 +1,88 @@
+.cartItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 395px;
+  height: 605px;
+  margin: 50px auto;
+  box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.carImage {
+  width: 350px;
+}
+
+.carImage img {
+  width: 350px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.class {
+  font-size: 35px;
+  color: brown;
+  margin-top: 5px;
+}
+
+.name {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.descriptionDiv {
+  width: 330px;
+  height: 200px;
+}
+
+.description {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.control {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.seatsAndLuggage {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.seatsAndLuggage p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.controlNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  font-size: 25px;
+}
+
+.increase,
+.decrease {
+  padding: 5px 15px;
+  text-align: center;
+  background-color: brown;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.numberOfItems {
+  padding: 5px 15px;
+}

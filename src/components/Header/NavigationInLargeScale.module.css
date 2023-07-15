@@ -2,14 +2,33 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
   margin: auto;
   padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+nav.sticky {
+  width: 100%;
 }
 
 .logo {
   color: white;
   font-size: 32px;
+}
+
+nav.sticky .logo {
+  color: black;
 }
 
 .logo span {
@@ -33,18 +52,29 @@ nav {
   margin-right: 24px;
 }
 
-.navItems ul li {
-  cursor: pointer;
+nav.sticky .navItems ul {
+  color: black;
 }
 
-.navItems ul li:first-child {
+.navItems ul li {
+  cursor: pointer;
   padding: 2px 4px;
+}
+
+.navItems ul li:hover {
+  margin: 0;
   background-color: brown;
   border-radius: 5px;
+  color: white;
 }
 
 .cartLogo {
   cursor: pointer;
+  color: white;
+}
+
+.cartLogoSticky {
+  color: black;
 }
 
 .numberOfItems {

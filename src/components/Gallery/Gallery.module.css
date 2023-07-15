@@ -1,0 +1,106 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.carOne {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carTwo {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carThree {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carFour {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carFive {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/inMiddle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.carFive h1 {
+  margin-top: -44px;
+  margin-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.carFive p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.contact {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.carSix {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carSeven {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car-7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carEight {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car-6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carNine {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../../assets/Car-5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

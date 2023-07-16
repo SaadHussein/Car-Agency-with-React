@@ -14,6 +14,7 @@ export const cars = [
     seats: 2,
     luggage: 2,
     image: carTwo,
+    id: "c1",
   },
   {
     name: "BMW 7 Series",
@@ -23,6 +24,7 @@ export const cars = [
     seats: 5,
     luggage: 3,
     image: carOne,
+    id: "c2",
   },
   {
     name: "Range Rover Sport",
@@ -32,6 +34,7 @@ export const cars = [
     seats: 7,
     luggage: 4,
     image: carThree,
+    id: "c3",
   },
   {
     name: "Mercedes-Benz S-Class",
@@ -40,6 +43,7 @@ export const cars = [
       "The Mercedes-Benz S-Class is the epitome of luxury and style, with its sleek lines and advanced technology. 's a four-door sedan that's perfect for those who demand the very best in automotive design and performance.",
     "seats: 5, luggage": 2,
     image: carSeven,
+    id: "c4",
   },
   {
     name: "Tesla Model S",
@@ -49,6 +53,7 @@ export const cars = [
     seats: 5,
     luggage: 2,
     image: carFive,
+    id: "c5",
   },
   {
     name: "Bentley Bentayga",
@@ -58,5 +63,6 @@ export const cars = [
     seats: 7,
     luggage: 4,
     image: carSix,
+    id: "c6",
   },
 ];

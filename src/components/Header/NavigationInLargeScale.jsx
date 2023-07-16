@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { MdShoppingCart } from "react-icons/md";
 import classes from "./NavigationInLargeScale.module.css";
+import { useContext } from "react";
+import { CartContext } from "../../context/cart-context";
 
 function NavigationInLargeScale(props) {
+  const cartCtx = useContext(CartContext);
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -21,6 +24,11 @@ function NavigationInLargeScale(props) {
 
     return () => window.removeEventListener("scroll", handlerScroll);
   }, [window.scrollY]);
+
+  const stateNavigationHandler = () => {
+    cartCtx.toggleNavigation();
+    console.log(cartCtx.navigationState);
+  };
 
   return (
     <nav className={`${sticky ? classes.sticky : ""}`}>
@@ -50,8 +58,9 @@ function NavigationInLargeScale(props) {
           className={`${classes.cartLogo} ${
             sticky ? classes.cartLogoSticky : ""
           }`}
+          onClick={stateNavigationHandler}
         />
-        <div className={classes.numberOfItems}>9</div>
+        <div className={classes.numberOfItems}>{cartCtx.allAmount}</div>
       </div>
     </nav>
   );

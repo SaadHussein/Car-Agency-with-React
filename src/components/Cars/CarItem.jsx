@@ -1,8 +1,29 @@
 import seats from "../../../assets/seats.png";
 import luggage from "../../../assets/luggage.png";
 import classes from "./CarItem.module.css";
+import { useContext } from "react";
+import { CartContext } from "../../context/cart-context";
 
 function CarItem(props) {
+  const cartCtx = useContext(CartContext);
+  let amount = cartCtx.getItemAmount(props.id);
+
+  const increaseItemHandler = () => {
+    console.log("Add");
+    cartCtx.addItem({
+      name: props.name,
+      class: props.class,
+      image: props.image,
+      id: props.id,
+      amount: 1,
+    });
+  };
+
+  const decreaseItemHandler = () => {
+    console.log("remove");
+    cartCtx.removeItem(props.id);
+  };
+
   return (
     <div className={classes.cartItem}>
       <div className={classes.carImage}>
@@ -23,9 +44,17 @@ function CarItem(props) {
           </p>
         </div>
         <div className={classes.controlNumber}>
-          <p className={classes.increase}>+</p>
-          <p className={classes.numberOfItems}>7</p>
-          <p className={classes.decrease}>-</p>
+          <p className={classes.increase} onClick={increaseItemHandler}>
+            +
+          </p>
+          <p className={classes.numberOfItems}>{amount}</p>
+          <button
+            className={classes.decrease}
+            onClick={decreaseItemHandler}
+            disabled={amount > 0 ? false : true}
+          >
+            -
+          </button>
         </div>
       </div>
     </div>

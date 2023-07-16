@@ -66,6 +66,7 @@ function Cars() {
               description={car.description}
               seats={car.seats}
               luggage={car.luggage}
+              id={car.id}
             />
           ))}
         </Slider>

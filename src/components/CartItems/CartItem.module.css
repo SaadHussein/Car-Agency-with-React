@@ -1,0 +1,40 @@
+.itemInCart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 5px 0;
+  padding: 10px;
+  width: 95%;
+}
+
+.bigHeader {
+  color: brown;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.miniHeader {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.imgInCart {
+  width: 170px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+
+.increase,
+.decrease {
+  font-size: 18px;
+  padding: 2px 8px;
+  background-color: brown;
+  border: none;
+  color: white;
+}

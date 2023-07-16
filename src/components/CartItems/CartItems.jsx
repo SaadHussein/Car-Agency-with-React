@@ -6,6 +6,7 @@ import CartItem from "./CartItem";
 
 function CartItems() {
   const cartCtx = useContext(CartContext);
+  const lenCart = cartCtx.items?.length;
 
   const removeAllHandler = () => {
     cartCtx.removeAllItems();
@@ -24,9 +25,14 @@ function CartItems() {
             name={item.name}
             class={item.class}
             id={item.id}
+            key={item.id}
           />
         ))}
       </div>
+      {!lenCart && (
+        <p style={{ color: "white", fontSize: 24 }}>No Items in The Cart.</p>
+      )}
+
       <button className={classes.deleteAll} onClick={removeAllHandler}>
         <MdDelete /> Remove All
       </button>

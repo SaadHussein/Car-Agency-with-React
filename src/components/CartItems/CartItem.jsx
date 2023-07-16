@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import classes from "./CartItem.module.css";
 import { CartContext } from "../../context/cart-context";
+import { MdDelete } from "react-icons/md";
 
 function CartItem(props) {
   const cartCtx = useContext(CartContext);
@@ -19,6 +20,11 @@ function CartItem(props) {
   const decreaseItemHandler = () => {
     cartCtx.removeItem(props.id);
   };
+
+  const deleteAllItemAmount = () => {
+    cartCtx.removeAllItemsAmount(props.id);
+  };
+
   return (
     <div className={classes.itemInCart}>
       <div className={classes.infoAndNumber}>
@@ -32,6 +38,7 @@ function CartItem(props) {
           <button className={classes.decrease} onClick={increaseItemHandler}>
             +
           </button>
+          <MdDelete color="#12273d" size={24} onClick={deleteAllItemAmount} />
         </div>
       </div>
       <img src={props.image} alt="Car Image" className={classes.imgInCart} />

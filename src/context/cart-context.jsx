@@ -9,6 +9,7 @@ export const CartContext = React.createContext({
   getItemAmount: (id) => {},
   toggleNavigation: (state) => {},
   removeAll: () => {},
+  removeAllItemsAmount: (id) => {},
 });
 const defaultCartState = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
@@ -105,6 +106,44 @@ const cartReducer = (state, action) => {
     return firstState;
   }
 
+  if (action.type === "REMOVEALLITEMAMOUNT") {
+    let updatedItems;
+    updatedItems = state.cartItems.filter((item) => item.id !== action.id);
+
+    console.log(updatedItems);
+    console.log(state.cartItems);
+
+    let ourItemIndex;
+    ourItemIndex = state.cartItems.findIndex((item) => item.id === action.id);
+    console.log(ourItemIndex);
+
+    let ourItem = state.cartItems[ourItemIndex];
+
+    console.log(ourItem.amount);
+
+    let updatedAmount = state.totalAmount - ourItem.amount;
+    console.log(updatedAmount);
+
+    // const { amount } = state.cartItems.filter((item) => item.id === action.id);
+    // console.log(amount);
+
+    // const updatedAmount = state.totalAmount - amount;
+    // console.log(updatedAmount);
+
+    localStorage.setItem(
+      "cartItems",
+      JSON.stringify({
+        cartItems: updatedItems,
+        totalAmount: updatedAmount,
+      })
+    );
+
+    return {
+      cartItems: updatedItems,
+      totalAmount: updatedAmount,
+    };
+  }
+
   return defaultCartState;
 };
 
@@ -134,6 +173,10 @@ const CartContextProvider = (props) => {
     dispatchCartActions({ type: "REMOVEALL" });
   };
 
+  const removeAllItemsAmount = (id) => {
+    dispatchCartActions({ type: "REMOVEALLITEMAMOUNT", id: id });
+  };
+
   const cartContext = {
     items: cartItems.cartItems,
     allAmount: cartItems.totalAmount,
@@ -143,6 +186,7 @@ const CartContextProvider = (props) => {
     getItemAmount: getItemAmount,
     toggleNavigation: toggleNavigation,
     removeAllItems: removeAllItems,
+    removeAllItemsAmount: removeAllItemsAmount,
   };
 
   return (

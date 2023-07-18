@@ -21,3 +21,9 @@
   color: #12273d;
   text-align: center;
 }
+
+@media (max-width: 830px) {
+  .serviceItem p {
+    font-size: 21px;
+  }
+}

@@ -12,14 +12,18 @@ import classes from "./Logos.module.css";
 function Logos() {
   return (
     <div className={classes.logos}>
-      <img src={nissan} alt="Loga Image" />
-      <img src={BMw} alt="Loga Image" />
-      <img src={volvo} alt="Loga Image" />
-      <img src={toyota} alt="Loga Image" />
-      <img src={subaru} alt="Loga Image" />
-      <img src={suzuki} alt="Loga Image" />
-      <img src={mercedes} alt="Loga Image" />
-      <img src={mitsubishi} alt="Loga Image" />
+      <div className={classes.groupOne}>
+        <img src={nissan} alt="Loga Image" />
+        <img src={BMw} alt="Loga Image" />
+        <img src={volvo} alt="Loga Image" />
+        <img src={toyota} alt="Loga Image" />
+      </div>
+      <div className={classes.groupTwo}>
+        <img src={subaru} alt="Loga Image" />
+        <img src={suzuki} alt="Loga Image" />
+        <img src={mercedes} alt="Loga Image" />
+        <img src={mitsubishi} alt="Loga Image" />
+      </div>
     </div>
   );
 }

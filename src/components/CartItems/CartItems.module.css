@@ -3,7 +3,7 @@
   top: 69px;
   right: 0;
   width: 385px;
-  height: 685px;
+  height: 95.25%;
   background-color: #12273d;
   z-index: 50;
   opacity: 0.95;
@@ -38,7 +38,7 @@
   justify-content: center;
   gap: 10px;
   font-size: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   margin-top: 10px;
   cursor: pointer;
   opacity: 1;

@@ -104,3 +104,34 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 1200px) {
+  .carOne,
+  .carTwo,
+  .carThree,
+  .carFour,
+  .carFive,
+  .carSix,
+  .carSeven,
+  .carEight,
+  .carNine {
+    height: 250px;
+  }
+  .carFive p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 980px) {
+  .carOne,
+  .carTwo,
+  .carThree,
+  .carFour,
+  .carFive,
+  .carSix,
+  .carSeven,
+  .carEight,
+  .carNine {
+    height: 190px;
+  }
+}

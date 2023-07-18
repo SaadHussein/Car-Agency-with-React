@@ -26,3 +26,9 @@
   width: 55%;
   margin-bottom: 50px;
 }
+
+@media (max-width: 1000px) {
+  .testimonialsList {
+    width: 75%;
+  }
+}

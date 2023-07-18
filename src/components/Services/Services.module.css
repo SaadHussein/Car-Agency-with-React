@@ -1,7 +1,7 @@
 .services {
   background-image: url("../../../assets/carBackground.png");
   max-width: 100%;
-  height: 100vh;
+  height: 750px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,7 +31,7 @@
   width: 90%;
   margin-top: 72px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 50px;
 }

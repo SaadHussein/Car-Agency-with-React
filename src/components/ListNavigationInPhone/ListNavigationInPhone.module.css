@@ -1,0 +1,43 @@
+.ListItems {
+  position: fixed;
+  top: 69px;
+  right: 0;
+  width: 360px;
+  height: 95.25%;
+  background-color: #12273d;
+  z-index: 50;
+  opacity: 0.95;
+  transform: translateX(100%);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.show {
+  transform: translateX(0%);
+}
+
+.ListItems ul {
+  list-style: none;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.ListItems ul li {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.ListItems ul li:hover {
+  background-color: brown;
+}
+
+.ListItems ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}

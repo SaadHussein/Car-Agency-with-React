@@ -61,3 +61,68 @@
 .testimonialImage img {
   width: 280px;
 }
+
+@media (max-width: 1450px) {
+  .testimonialImage {
+    right: -100px;
+  }
+  .testimonialImage img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 1325px) {
+  .testimonialImage {
+    right: -120px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .testimonialImage img {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .testimonialImage img {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .testimonialImage img {
+    width: 225px;
+  }
+
+  .reviewerName {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .testimonialImage img {
+    width: 215px;
+  }
+
+  .reviewerName {
+    font-size: 24px;
+  }
+
+  .testimonialImage {
+    right: -115px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .feedback {
+    font-size: 21px;
+  }
+
+  .reviewer {
+    gap: 10px;
+  }
+
+  .reviewerName {
+    font-size: 21px;
+  }
+}

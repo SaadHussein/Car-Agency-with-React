@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MdShoppingCart } from "react-icons/md";
+import { MdShoppingCart, MdFormatListBulleted } from "react-icons/md";
 import classes from "./NavigationInLargeScale.module.css";
 import { useContext } from "react";
 import { CartContext } from "../../context/cart-context";
@@ -27,7 +27,18 @@ function NavigationInLargeScale(props) {
 
   const stateNavigationHandler = () => {
     cartCtx.toggleNavigation();
+    if (cartCtx.listState) {
+      cartCtx.toggleListState();
+    }
     console.log(cartCtx.navigationState);
+  };
+
+  const listItemsInPhoneHandler = () => {
+    cartCtx.toggleListState();
+    if (cartCtx.navigationState) {
+      cartCtx.toggleNavigation();
+    }
+    console.log(cartCtx.listState);
   };
 
   return (
@@ -59,6 +70,13 @@ function NavigationInLargeScale(props) {
             sticky ? classes.cartLogoSticky : ""
           }`}
           onClick={stateNavigationHandler}
+        />
+        <MdFormatListBulleted
+          size={28}
+          className={`${classes.listInPhone} ${
+            sticky ? classes.cartLogoSticky : ""
+          }`}
+          onClick={listItemsInPhoneHandler}
         />
         <div className={classes.numberOfItems}>{cartCtx.allAmount}</div>
       </div>

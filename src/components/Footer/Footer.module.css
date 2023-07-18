@@ -130,3 +130,39 @@
   width: 80%;
   border-top: 1px solid brown;
 }
+
+@media (max-width: 1045px) {
+  .above {
+    gap: 40px;
+  }
+
+  .about {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mailInput {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .above {
+    gap: 10px;
+  }
+  .about {
+    width: 190px;
+  }
+  .footer {
+    width: 100%;
+  }
+
+  .mailInput input {
+    padding: 8px 4px;
+  }
+}

@@ -95,10 +95,6 @@ nav.sticky .navItems ul li a:hover {
   color: white;
 }
 
-.cartLogoSticky {
-  color: black;
-}
-
 .numberOfItems {
   position: absolute;
   top: -15px;
@@ -107,4 +103,29 @@ nav.sticky .navItems ul li a:hover {
   background-color: wheat;
   padding: 2px;
   border-radius: 8px;
+}
+
+.listInPhone {
+  display: none;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.cartLogoSticky {
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .navItems ul {
+    display: none;
+  }
+
+  .numberOfItems {
+    right: 35px;
+  }
+
+  .listInPhone {
+    display: block;
+  }
 }

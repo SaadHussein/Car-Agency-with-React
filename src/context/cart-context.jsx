@@ -8,6 +8,7 @@ export const CartContext = React.createContext({
   removeItemFromCart: (id) => {},
   getItemAmount: (id) => {},
   toggleNavigation: (state) => {},
+  toggleListState: (state) => {},
   removeAll: () => {},
   removeAllItemsAmount: (id) => {},
 });
@@ -149,6 +150,7 @@ const cartReducer = (state, action) => {
 
 const CartContextProvider = (props) => {
   const [navState, setNavState] = useState(false);
+  const [listState, setListState] = useState(false);
   const [cartItems, dispatchCartActions] = useReducer(
     cartReducer,
     defaultCartState
@@ -169,6 +171,10 @@ const CartContextProvider = (props) => {
     setNavState(!navState);
   };
 
+  const toggleListState = () => {
+    setListState(!listState);
+  };
+
   const removeAllItems = () => {
     dispatchCartActions({ type: "REMOVEALL" });
   };
@@ -185,6 +191,8 @@ const CartContextProvider = (props) => {
     removeItem: removeItemFromCartHandler,
     getItemAmount: getItemAmount,
     toggleNavigation: toggleNavigation,
+    toggleListState: toggleListState,
+    listState: listState,
     removeAllItems: removeAllItems,
     removeAllItemsAmount: removeAllItemsAmount,
   };

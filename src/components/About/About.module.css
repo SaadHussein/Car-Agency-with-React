@@ -52,3 +52,67 @@
   position: absolute;
   right: 0;
 }
+
+@media (max-width: 1050px) {
+  .text h1 {
+    font-size: 90px;
+  }
+
+  .aboutImages {
+    margin-right: 0;
+  }
+
+  .carWall {
+    width: 380px;
+  }
+
+  .wall {
+    width: 400px;
+  }
+}
+
+@media (max-width: 905px) {
+  .text h1 {
+    font-size: 80px;
+  }
+
+  .aboutImages {
+    margin-right: 0;
+  }
+
+  .carWall {
+    width: 300px;
+  }
+
+  .wall {
+    width: 325px;
+  }
+
+  .paragraphOne {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 870px) {
+  .about {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  .text {
+    margin-top: 65px;
+  }
+
+  .text h1 {
+    font-size: 70px;
+  }
+
+  .text h2 {
+    top: 0;
+  }
+
+  .paragraphOne {
+    font-size: 17px;
+  }
+}

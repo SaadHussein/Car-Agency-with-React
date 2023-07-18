@@ -1,6 +1,6 @@
 import car1 from "../assets/car1.png";
-import car2 from "../assets/car2.png";
-import car3 from "../assets/car3.png";
+import carFive from "../assets/car5.png";
+import carSix from "../assets/car6.png";
 import car4 from "../assets/car4.png";
 
 export const testimonials = [
@@ -16,14 +16,14 @@ export const testimonials = [
     description:
       "YourCar made selling my car a breeze. They handled all the paperwork and negotiations, and I received a fair price for my vehicle. I would definitely use their services again in the future.",
     city: "Cairo",
-    image: car2,
+    image: carFive,
   },
   {
     name: "Michael Khalil",
     description:
       "1 had a wonderful experience renting a car from YourCar. The car was in excellent condition and the pickup and drop-off process was seamless. I highly recommend them for anyone in need of a luxury car rental.",
     city: "Paris",
-    image: car3,
+    image: carSix,
   },
   {
     name: "Emily Han",

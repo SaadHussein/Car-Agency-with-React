@@ -116,3 +116,44 @@
     font-size: 17px;
   }
 }
+
+@media (max-width: 720px) {
+  .text h1 {
+    font-size: 60px;
+  }
+  .paragraphOne {
+    font-size: 16px;
+  }
+  .carWall {
+    width: 230px;
+  }
+
+  .wall {
+    width: 260px;
+  }
+
+  .about {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .text {
+    margin-top: 40px;
+  }
+
+  .paragraphOne {
+    font-size: 14px;
+    margin-top: -12px;
+    font-size: 13px;
+  }
+
+  .text h1 {
+    font-size: 48px;
+  }
+
+  .text h2 {
+    font-size: 28px;
+    top: -15px;
+  }
+}

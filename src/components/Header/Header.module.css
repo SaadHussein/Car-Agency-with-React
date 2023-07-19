@@ -43,3 +43,13 @@
   border-radius: 6px;
   cursor: pointer;
 }
+
+@media (max-width: 770px) {
+  .headerText h1 {
+    font-size: 48px;
+  }
+
+  .headerText p {
+    font-size: 28px;
+  }
+}

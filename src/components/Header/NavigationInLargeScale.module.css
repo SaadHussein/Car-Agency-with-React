@@ -129,3 +129,22 @@ nav.sticky .navItems ul li a:hover {
     display: block;
   }
 }
+
+@media (max-width: 770px) {
+  nav {
+    background-color: white;
+    padding-bottom: 7px;
+  }
+
+  .logo {
+    color: black;
+  }
+
+  .cartLogo {
+    color: black;
+  }
+
+  .listInPhone {
+    color: black;
+  }
+}

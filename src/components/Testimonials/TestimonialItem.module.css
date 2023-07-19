@@ -126,3 +126,45 @@
     font-size: 21px;
   }
 }
+
+@media (max-width: 730px) {
+  .testimonialImage img {
+    width: 180px;
+  }
+
+  .testimonialImage {
+    right: -45px;
+  }
+}
+
+@media (max-width: 680px) {
+  .feedback {
+    font-size: 18px;
+  }
+
+  .testimonialImage img {
+    width: 150px;
+  }
+
+  .testimonialImage {
+    right: -55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    position: relative;
+    margin: 50px;
+    margin-top: 0;
+  }
+
+  .testimonialItem {
+    padding: 15px 20px;
+  }
+
+  .feedback {
+    width: 375px;
+    height: 370px;
+    font-size: 21px;
+  }
+}

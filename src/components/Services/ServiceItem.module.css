@@ -27,3 +27,31 @@
     font-size: 21px;
   }
 }
+
+@media (max-width: 675px) {
+  .serviceItem img {
+    width: 72px;
+  }
+
+  .serviceItem h2 {
+    font-size: 28px;
+  }
+
+  .serviceItem p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .serviceItem img {
+    width: 64px;
+  }
+
+  .serviceItem h2 {
+    font-size: 24px;
+  }
+
+  .serviceItem p {
+    font-size: 16px;
+  }
+}

@@ -134,4 +134,49 @@
   .carNine {
     height: 190px;
   }
+
+  .carFive h1 {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+
+  .carFive p {
+    font-size: 12px;
+  }
+
+  .contact {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 770px) {
+  .carOne,
+  .carTwo,
+  .carThree,
+  .carFour,
+  .carFive,
+  .carSix,
+  .carSeven,
+  .carEight,
+  .carNine {
+    height: 135px;
+  }
+}
+
+@media (max-width: 720px) {
+  .carFive p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 665px) {
+  .carFive p {
+    font-size: 9px;
+    margin-bottom: 15px;
+  }
+
+  .contact {
+    font-size: 12px;
+  }
 }

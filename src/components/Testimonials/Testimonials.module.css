@@ -32,3 +32,24 @@
     width: 75%;
   }
 }
+
+@media (max-width: 750px) {
+  .bigHeader {
+    font-size: 75px;
+  }
+
+  .testimonialsList {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .miniHeader {
+    font-size: 35px;
+    margin-top: -20px;
+  }
+
+  .bigHeader {
+    font-size: 65px;
+  }
+}

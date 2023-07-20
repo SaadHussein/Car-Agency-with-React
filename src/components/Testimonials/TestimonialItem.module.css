@@ -238,4 +238,8 @@
     top: 445px;
     right: -10px;
   }
+
+  .stars {
+    margin-top: 15px;
+  }
 }

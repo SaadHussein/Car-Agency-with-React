@@ -23,6 +23,20 @@ function SampleNextArrow(props) {
   );
 }
 
+function SampleNextArrowNone(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "none",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -35,6 +49,20 @@ function SamplePrevArrow(props) {
         height: "18px",
         width: "19px",
         background: "brown",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrowNone(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "none",
       }}
       onClick={onClick}
     />
@@ -61,6 +89,14 @@ function Cars() {
         breakpoint: 895,
         settings: {
           slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+          nextArrow: <SampleNextArrowNone />,
+          prevArrow: <SamplePrevArrowNone />,
         },
       },
     ],

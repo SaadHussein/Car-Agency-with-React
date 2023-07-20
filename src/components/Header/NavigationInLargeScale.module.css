@@ -148,3 +148,11 @@ nav.sticky .navItems ul li a:hover {
     color: black;
   }
 }
+
+@media (max-width: 425px) {
+  nav {
+    padding-top: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

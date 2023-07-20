@@ -87,3 +87,20 @@
     gap: 35px;
   }
 }
+
+@media (max-width: 425px) {
+  .groupOne img,
+  .groupTwo img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 355px) {
+  .groupOne {
+    gap: 35px;
+  }
+
+  .groupTwo {
+    gap: 25px;
+  }
+}

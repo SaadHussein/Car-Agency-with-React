@@ -196,3 +196,17 @@
     height: 365px;
   }
 }
+
+@media (max-width: 415px) {
+  .text {
+    height: 440px;
+  }
+
+  .text h2 {
+    left: 155px;
+  }
+
+  .paragraphOne {
+    width: 310px;
+  }
+}

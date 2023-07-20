@@ -5,6 +5,62 @@ import classes from "./Testimonials.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function SampleNextArrowNone(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "none",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrowNone(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "none",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 function Testimonials() {
   const setting = {
     dots: true,
@@ -12,6 +68,18 @@ function Testimonials() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 430,
+        setting: {
+          slidesToShow: 1,
+          nextArrow: <SampleNextArrowNone />,
+          prevArrow: <SamplePrevArrowNone />,
+        },
+      },
+    ],
   };
   return (
     <div className={classes.testimonials}>

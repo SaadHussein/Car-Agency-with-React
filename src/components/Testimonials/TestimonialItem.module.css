@@ -222,3 +222,20 @@
     right: -25px;
   }
 }
+
+@media (max-width: 400px) {
+  .testimonial {
+    margin: 10px;
+  }
+
+  .feedback {
+    width: 215px;
+    height: 260px;
+    font-size: 14px;
+  }
+
+  .testimonialImage {
+    top: 445px;
+    right: -10px;
+  }
+}

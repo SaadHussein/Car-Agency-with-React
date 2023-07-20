@@ -67,3 +67,9 @@
     width: 320px;
   }
 }
+
+@media (max-width: 330px) {
+  .serviceItem p {
+    width: 250px;
+  }
+}

@@ -104,3 +104,13 @@
     gap: 25px;
   }
 }
+
+@media (max-width: 330px) {
+  .groupOne {
+    gap: 25px;
+  }
+
+  .groupTwo {
+    gap: 15px;
+  }
+}

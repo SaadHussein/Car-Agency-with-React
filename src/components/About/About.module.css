@@ -210,3 +210,12 @@
     width: 310px;
   }
 }
+
+@media (max-width: 320px) {
+  .text {
+    height: 530px;
+  }
+  .paragraphOne {
+    width: 250px;
+  }
+}

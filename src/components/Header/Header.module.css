@@ -53,3 +53,35 @@
     font-size: 28px;
   }
 }
+
+@media (max-width: 530px) {
+  .headerText {
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 115px;
+  }
+
+  .headerText h1 {
+    font-size: 44px;
+  }
+
+  .headerText p {
+    width: 85%;
+    padding: 15px 25px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .headerText p br {
+    display: none;
+  }
+
+  .headerText button {
+    margin-top: 55px;
+    font-size: 24px;
+  }
+}

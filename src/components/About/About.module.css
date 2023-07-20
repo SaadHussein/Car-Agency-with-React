@@ -157,3 +157,42 @@
     top: -15px;
   }
 }
+
+@media (max-width: 530px) {
+  .aboutImages {
+    display: none;
+  }
+
+  .about {
+    margin-top: 40px;
+  }
+
+  .text {
+    align-items: center;
+    height: 350px;
+  }
+
+  .text h2 {
+    left: 210px;
+  }
+
+  .paragraphOne {
+    width: 430px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .text h2 {
+    left: 175px;
+  }
+
+  .paragraphOne {
+    width: 390px;
+  }
+
+  .text {
+    height: 365px;
+  }
+}

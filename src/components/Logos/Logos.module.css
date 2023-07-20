@@ -70,3 +70,20 @@
     gap: 50px;
   }
 }
+
+@media (max-width: 565px) {
+  .groupOne img,
+  .groupTwo img {
+    width: 65px;
+  }
+}
+
+@media (max-width: 500px) {
+  .groupOne {
+    gap: 50px;
+  }
+
+  .groupTwo {
+    gap: 35px;
+  }
+}

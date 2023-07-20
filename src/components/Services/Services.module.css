@@ -49,3 +49,24 @@
     width: 95%;
   }
 }
+
+@media (max-width: 530px) {
+  .services {
+    height: 1000px;
+  }
+  .servicesList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .services h1 {
+    font-size: 72px;
+  }
+
+  .miniTitle {
+    top: 120px;
+    font-size: 40px;
+  }
+}

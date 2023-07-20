@@ -106,3 +106,41 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 565px) {
+  .cartItem {
+    width: 340px;
+  }
+
+  .carImage img {
+    width: 270px;
+  }
+
+  .descriptionDiv {
+    width: 240px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 475px) {
+  .cartItem {
+    width: 300px;
+  }
+
+  .carImage {
+    width: 265px;
+  }
+
+  .carImage img {
+    width: 250px;
+  }
+
+  .increase,
+  .decrease {
+    padding: 2px 8px;
+    font-size: 16px;
+  }
+}

@@ -230,7 +230,7 @@
 
   .feedback {
     width: 215px;
-    height: 325px;
+    height: 300px;
     font-size: 12px;
   }
 
@@ -240,6 +240,6 @@
   }
 
   .stars {
-    margin-top: 15px;
+    margin-top: 5px;
   }
 }

@@ -185,7 +185,7 @@
 
 @media (max-width: 450px) {
   .text h2 {
-    left: 175px;
+    left: 160px;
   }
 
   .paragraphOne {
@@ -199,7 +199,7 @@
 
 @media (max-width: 415px) {
   .text {
-    height: 500px;
+    height: 520px;
   }
 
   .text h2 {

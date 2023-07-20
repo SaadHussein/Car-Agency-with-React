@@ -52,7 +52,7 @@
 
 @media (max-width: 530px) {
   .services {
-    height: 1000px;
+    height: 1100px;
   }
   .servicesList {
     flex-direction: column;

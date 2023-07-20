@@ -88,7 +88,7 @@
 
 @media (max-width: 415px) {
   .headerText h1 {
-    font-size: 38px;
+    font-size: 35px;
   }
 
   .headerText p {
@@ -98,7 +98,7 @@
 
 @media (max-width: 330px) {
   .headerText h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .headerText p {

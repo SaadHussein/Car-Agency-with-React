@@ -178,7 +178,7 @@
 
   .paragraphOne {
     width: 430px;
-    text-align: center;
+    text-align: start;
     font-size: 15px;
   }
 }

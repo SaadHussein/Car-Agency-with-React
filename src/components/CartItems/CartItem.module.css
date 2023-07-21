@@ -38,3 +38,15 @@
   border: none;
   color: white;
 }
+
+@media (max-width: 320px) {
+  .imgInCart {
+    width: 150px;
+  }
+}
+
+@media (max-width: 295px) {
+  .imgInCart {
+    width: 130px;
+  }
+}

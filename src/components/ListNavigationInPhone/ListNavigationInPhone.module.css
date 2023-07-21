@@ -41,3 +41,9 @@
   color: white;
   font-size: 24px;
 }
+
+@media (max-width: 320px) {
+  .ListItems {
+    width: 270px;
+  }
+}

@@ -243,3 +243,36 @@
     margin-top: 15px;
   }
 }
+
+@media (max-width: 320px) {
+  .stars {
+    gap: 2px;
+    margin: 10px 0;
+  }
+
+  .stars img {
+    width: 20px;
+  }
+
+  .reviewerName {
+    font-size: 16px;
+  }
+
+  .reviewerCity {
+    font-size: 12px;
+  }
+
+  .testimonialImage {
+    top: 435px;
+    right: 0px;
+  }
+
+  .testimonialImage img {
+    width: 105px;
+  }
+
+  .feedback {
+    width: 195px;
+    font-size: 10px;
+  }
+}

@@ -224,3 +224,9 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 300px) {
+  .carFive p {
+    font-size: 12px;
+  }
+}

@@ -168,3 +168,9 @@
     width: 280px;
   }
 }
+
+@media (max-width: 295px) {
+  .cartItem {
+    width: 260px;
+  }
+}
